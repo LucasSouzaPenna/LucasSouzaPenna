@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+//nome:Lucas de Souza Penna.
+
+int main(){
+	
+	int m[3][3] ,l ,c ;
+	
+	printf("=== MATRIZ 3 X 3 === \n>feito por: Lucas de Souza Penna\n\n ==EXPLICACAO:==\n");
+	printf("         0       1       2                                                \n");
+	printf("      _______________________                                             \n");
+	printf("     |       |       |       |        quadrado[0][0] = 1                  \n");
+	printf("  0  |   1   |   2   |   3   |        quadrado[0][1] = 2                  \n");
+	printf("     |_______|_______|_______|        quadrado[0][2] = 3                  \n");
+	printf("     |       |       |       |        quadrado[1][0] = 4                  \n");
+	printf("  1  |   4   |   5   |   6   |        quadrado[1][1] = 5                  \n");
+	printf("     |_______|_______|_______|        quadrado[1][2] = 6                  \n");
+	printf("     |       |       |       |        quadrado[2][0] = 7                  \n");
+	printf("  2  |   7   |   8   |   9   |        quadrado[2][1] = 8                  \n");
+	printf("     |_______|_______|_______|        quadrado[2][2] = 9                  \n");
+	printf("=========================================================\n");
+
+	printf(">Escreva a baixo os numeros de uma matriz 3 x 3.\n\n");
+	for(l = 0; l < 3; l++){
+		for(c = 0; c < 3; c++){
+			
+			printf("matriz[%d][%d] = ",l,c);
+			scanf("%d",&m[l][c]);		
+		}
+	}
+	printf("=== Matriz escolhida ===\n\n");	
+	for(l = 0; l < 3; l++){
+		for(c = 0; c < 3; c++)
+			printf("%d ",m[l][c]);
+		printf("\n");		
+	}
+	printf("=== Matriz multiplicada por 5 ===\n\n");
+	for(l = 0; l < 3; l++){
+		for(c = 0; c < 3; c++)
+			printf("%d ",m[l][c]*5);
+		printf("\n");	
+	}
+	
+	return 0;
+}
